@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #645cff;
+  --primary-dark: #3c3799;
+  --gray-light: #f1f5f9;
+  --gray-dark: #0f172a;
+  --fluid-width: 90vw;
+  --max-width: 1170px;
+  --black: #222;
+  --white: #fff;
+  --letter-spacing: 2px;
+  --border-radius: 0.15rem;
+  --shadow-light: 0 5px rgba(0, 0, 0, 0.1);
+  --shadow-dark: 0 5px rgba(0, 0, 0, 0.2);
+  --transition: all 0.3s ease-in-out;
+}
+
+/* img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+} */
+
+.img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  background-color: var(--gray-light);
+  color: var(--black);
+}
+
+.blogs {
+  padding: 5rem 0;
+}
+
+.section-title {
+  text-transform: capitalize;
+  text-align: center;
+  letter-spacing: var(--letter-spacing);
+  margin-bottom: 2rem;
+}
+
+.blogs-center {
+  width: var(--fluid-width);
+  max-width: var(--max-width);
+  margin: 0 auto;
+  /* temp */
+  max-width: 500px;
+}
+
+.blog {
+  background: var(--white);
+  border-radius: var(--border-radius);
+  margin-bottom: 2rem;
+  padding: 0.75rem;
+  box-shadow: var(--shadow-light);
+  transition: var(--transition);
+}
+
+.blog:hover {
+  box-shadow: var(--shadow-dark);
+}
+
+.blog-img {
+  margin-bottom: 0.75rem;
+  border-radius: var(--border-radius);
+}
+
+.blog-content {
+  padding-bottom: 1rem;
+}
+
+.blog-content span {
+  color: var(--primary);
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: var(--letter-spacing);
+}
+
+.blog-content h3 {
+  text-transform: capitalize;
+  margin-bottom: 0.5rem;
+  letter-spacing: var(--letter-spacing);
+}
+
+.blog-content p {
+  margin-bottom: 0.5rem;
+  color: var(--gray-dark);
+}
+
+.blog-content a {
+  text-transform: capitalize;
+  font-weight: 500;
+  color: var(--primary-dark);
+  transition: var(--transition);
+  letter-spacing: var(--letter-spacing);
+}
